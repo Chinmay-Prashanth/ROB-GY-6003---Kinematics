@@ -1,0 +1,17 @@
+figure(1)
+subplot(4,1,1); plot(t, ans.joint(:,1));title('Joint-1')
+subplot(4,1,2); plot(t, ans.joint(:,2));title('Joint-2')
+subplot(4,1,3); plot(t, ans.joint(:,3));title('Joint-3')
+subplot(4,1,4); plot(t, ans.joint(:,4));title('Joint-4')
+
+figure(2)
+subplot(4,1,1); plot(t, ans.joint_error(:,1));title('Error-1')
+subplot(4,1,2); plot(t, ans.joint_error(:,2));title('Error-2')
+subplot(4,1,3); plot(t, ans.joint_error(:,3));title('Error-3')
+subplot(4,1,4); plot(t, ans.joint_error(:,4));title('Error-4')
+
+figure(3)
+subplot(4,1,1); plot(t, ans.joint_velocity_error(:,1));title('Error velocity-1')
+subplot(4,1,2); plot(t, ans.joint_velocity_error(:,2));title('Error velocity-2')
+subplot(4,1,3); plot(t, ans.joint_velocity_error(:,3));title('Error velocity-3')
+subplot(4,1,4); plot(t, ans.joint_velocity_error(:,4));title('Error velocity-4')

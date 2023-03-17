@@ -1,0 +1,17 @@
+figure(1)
+subplot(4,1,1); plot(t, ans.Joints(:,1));title('Joint-1')
+subplot(4,1,2); plot(t, ans.Joints(:,2));title('Joint-2')
+subplot(4,1,3); plot(t, ans.Joints(:,3));title('Joint-3')
+subplot(4,1,4); plot(t, ans.Joints(:,4));title('Joint-4')
+
+figure(2)
+subplot(4,1,1); plot(t, ans.Joint_E(:,1));title('Joint Error-1')
+subplot(4,1,2); plot(t, ans.Joint_E(:,2));title('Joint Error-2')
+subplot(4,1,3); plot(t, ans.Joint_E(:,3));title('Joint Error-3')
+subplot(4,1,4); plot(t, ans.Joint_E(:,4));title('Joint Error-4')
+
+figure(3)
+subplot(4,1,1); plot(t, ans.Velocity_E(:,1));title('Velocity Error-1')
+subplot(4,1,2); plot(t, ans.Velocity_E(:,2));title('Velocity Error-2')
+subplot(4,1,3); plot(t, ans.Velocity_E(:,3));title('Velocity Error-3')
+subplot(4,1,4); plot(t, ans.Velocity_E(:,4));title('Velocity Error-4')
